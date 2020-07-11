@@ -1,0 +1,36 @@
+---
+title: "Reproducible Pitch"
+author: "Ankit Kumar Verma"
+date: "11/07/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+This assignment is for Shiny Application and Reproducible Pitch. The data is taken from dataset mtcars. This model takes two values: No. of Cylinders and Weight of the car.
+
+Input the value of no. of cylinders and weight of the car in below inputs to get the approximate range of Mileage of the car
+
+
+
+## Data Source
+
+We used the *mtcars* dataset, the documentation of which is available at the following link: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
+
+## Data Labels
+No. of Cyliners: whole nos.
+
+Weight of the car:in 1000 lbs
+
+Mileage of the car: in MPG
+
+
+## Server Calculation
+lower value= 37.29677-2.402365* cyl-4.769929*wt
+
+mean value= 40.898313-1.784173* cyl-3.583425*wt
+
+upper value= 44.49985-1.165981* cyl-2.396921*wt
